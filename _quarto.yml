@@ -3,3 +3,5 @@ project:
   title: "iice-2026"
   render:
     - index.qmd
+  resources:
+    - grid-worms/*

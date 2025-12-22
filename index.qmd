@@ -122,31 +122,32 @@ include_graphics(here("figure", "taylor", "all-taylor.png"))
 #| fig-alt: |
 #|   A normal distribution with images of Taylor Swift from each era overlayed.
 
-taylors <- read_rds(here("data", "taylor-results.rds")) |> 
-  mutate(x = theta, y = 0.02,
-         img = here("figure", "taylor", "eras", img))
+taylors <- read_rds(here("data", "taylor-results.rds")) |>
+  mutate(x = theta, y = 0.02, img = here("figure", "taylor", "eras", img))
 
-base <- prior(normal(0, 1), type = "intercept") |> 
-  dcmstan::prior_tibble() |> 
-  parse_dist(prior) |> 
+base <- prior(normal(0, 1), type = "intercept") |>
+  dcmstan::prior_tibble() |>
+  parse_dist(prior) |>
   ggplot(aes(xdist = .dist_obj)) +
   stat_slab(color = palette_measr[1], fill = palette_measr[3])
 
 width <- 0.6
 for (i in 1:nrow(taylors)) {
   img <- as.raster(image_read(taylors$img[i]))
-  
+
   base <- base +
-    annotation_raster(img,
-                      taylors$x[i] - (width / 2),
-                      taylors$x[i] + (width / 2),
-                      taylors$y[i], taylors$y[i] + 0.25)
+    annotation_raster(
+      img,
+      taylors$x[i] - (width / 2),
+      taylors$x[i] + (width / 2),
+      taylors$y[i],
+      taylors$y[i] + 0.25
+    )
 }
 
 base +
   labs(x = "Musical Knowledge", y = NULL) +
-  theme(axis.text.y = element_blank(),
-        axis.title.y = element_blank())
+  theme(axis.text.y = element_blank(), axis.title.y = element_blank())
 ```
 :::
 :::
@@ -200,20 +201,39 @@ base +
 
 library(ggforce)
 
-tibble(start = rep(c(-pi / 2, pi / 2), 3),
-       type = rep(c("Proficient", "Non-proficient"), 3),
-       skill = rep(c("Songwriting", "Production", "Vocals"),
-                   each = 2),
-       x = rep(c(3, 6, 9), each = 2),
-       y = 0) |> 
+tibble(
+  start = rep(c(-pi / 2, pi / 2), 3),
+  type = rep(c("Proficient", "Non-proficient"), 3),
+  skill = rep(c("Songwriting", "Production", "Vocals"), each = 2),
+  x = rep(c(3, 6, 9), each = 2),
+  y = 0
+) |>
   ggplot() +
-  geom_arc_bar(aes(x0 = x, y0 = y, r0 = 0, r = 1.2, start = start,
-                   end = start + pi, fill = type), color = "white",
-               show.legend = FALSE, radius = 0) +
-  geom_text(data = ~slice(., c(1, 3, 5, 7)),
-            aes(x = x, y = 0.2, label = skill), size = 5) +
-  scale_fill_manual(values = c("Proficient" = palette_measr[3],
-                               "Non-proficient" = palette_measr[1])) +
+  geom_arc_bar(
+    aes(
+      x0 = x,
+      y0 = y,
+      r0 = 0,
+      r = 1.2,
+      start = start,
+      end = start + pi,
+      fill = type
+    ),
+    color = "white",
+    show.legend = FALSE,
+    radius = 0
+  ) +
+  geom_text(
+    data = ~ slice(., c(1, 3, 5, 7)),
+    aes(x = x, y = 0.2, label = skill),
+    size = 5
+  ) +
+  scale_fill_manual(
+    values = c(
+      "Proficient" = palette_measr[3],
+      "Non-proficient" = palette_measr[1]
+    )
+  ) +
   coord_equal() +
   theme_void()
 ```
@@ -231,33 +251,48 @@ tibble(start = rep(c(-pi / 2, pi / 2), 3),
 library(gt)
 library(gtExtras)
 
-taylor_profiles <- taylors |> 
-  mutate(across(c(songwriting, production, vocals),
-                \(x) case_when(x == 1 ~ "check", x == 0 ~ "xmark"))) |> 
-  mutate(s_color = case_when(songwriting == "xmark" ~ palette_measr[2],
-                             songwriting == "check" ~ palette_measr[4]),
-         p_color = case_when(production == "xmark" ~ palette_measr[2],
-                             production == "check" ~ palette_measr[4]),
-         v_color = case_when(vocals == "xmark" ~ palette_measr[2],
-                             vocals == "check" ~ palette_measr[4])) |> 
-  select(era, album_release, img, songwriting, production, vocals,
-         ends_with("_color"))
+taylor_profiles <- taylors |>
+  mutate(across(c(songwriting, production, vocals), \(x) {
+    case_when(x == 1 ~ "check", x == 0 ~ "xmark")
+  })) |>
+  mutate(
+    s_color = case_when(
+      songwriting == "xmark" ~ palette_measr[2],
+      songwriting == "check" ~ palette_measr[4]
+    ),
+    p_color = case_when(
+      production == "xmark" ~ palette_measr[2],
+      production == "check" ~ palette_measr[4]
+    ),
+    v_color = case_when(
+      vocals == "xmark" ~ palette_measr[2],
+      vocals == "check" ~ palette_measr[4]
+    )
+  ) |>
+  select(
+    era,
+    album_release,
+    img,
+    songwriting,
+    production,
+    vocals,
+    ends_with("_color")
+  )
 
-taylor_profiles |> 
-  filter(era %in% c("1989", "reputation", "folklore")) |> 
-  select(img, songwriting, production, vocals,
-         ends_with("_color")) |>
-  gt() |> 
-  cols_hide(ends_with("_color")) |> 
+taylor_profiles |>
+  filter(era %in% c("1989", "reputation", "folklore")) |>
+  select(img, songwriting, production, vocals, ends_with("_color")) |>
+  gt() |>
+  cols_hide(ends_with("_color")) |>
   cols_label(img = "") |>
   # cols_width(img ~ px(100),
   #            everything() ~ px(150)) |>
   gt_img_rows(columns = img, img_source = "local", height = 75) |>
-  fmt_icon(songwriting, fill_color = from_column("s_color"), height = "40px") |> 
-  fmt_icon(production, fill_color = from_column("p_color"), height = "40px") |> 
-  fmt_icon(vocals, fill_color = from_column("v_color"), height = "40px") |> 
-  cols_align("center", -img) |> 
-  gt_theme_measr() |> 
+  fmt_icon(songwriting, fill_color = from_column("s_color"), height = "40px") |>
+  fmt_icon(production, fill_color = from_column("p_color"), height = "40px") |>
+  fmt_icon(vocals, fill_color = from_column("v_color"), height = "40px") |>
+  cols_align("center", -img) |>
+  gt_theme_measr() |>
   tab_options(table.font.size = 24)
 ```
 
@@ -274,6 +309,27 @@ taylor_profiles |>
 
 # Using DCMs to improve student<br/>outcomes
 
+## Applications in educational assessment
+
+:::{.columns}
+
+:::{.column width="60%"}
+* [Dynamic Learning Maps](https://dynamiclearningmaps.org)
+
+* [Pathways to Instructionally Embedded assessmet](https://pie.atlas4learning.org)
+:::
+
+:::{.column .center width="40%"}
+
+```{r}
+include_graphics("figure/qr-emip.png")
+```
+
+Thompson & Clark (2024)
+:::
+
+:::
+
 # {.empty data-menu-title="measr" background-color="#023047" background-iframe="grid-worms/index.html"}
 
 ```{r}
@@ -284,7 +340,7 @@ taylor_profiles |>
 include_graphics("figure/measr-hex.png")
 ```
 
-## Improved software for diagnostic models
+## Improved software for diagnostic models {.flip-brand}
 
 * measr: [R](https://r-project.org) package for Bayesian psychometric measurement using [*Stan*](https://mc-stan.org)
 
