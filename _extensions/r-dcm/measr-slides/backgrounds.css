@@ -1,0 +1,41 @@
+/* for no measr logos, change `unbranded/` to `ununbranded/` */
+
+.reveal .slide-background-content {
+  background-image: url("figure/backgrounds/unbranded/ku-title.png");
+  background-size: contain;
+}
+
+.reveal .level2 .slide-background-content {
+  background-image: url("figure/backgrounds/unbranded/default.png");
+  background-size: contain;
+}
+
+.reveal .title-slide .slide-background-content {
+  background-image: url("figure/backgrounds/unbranded/section.png");
+  background-size: contain;
+}
+
+.reveal .exercise .slide-background-content {
+  background-image: url("figure/backgrounds/unbranded/exercises.png");
+  background-size: contain;
+}
+
+.reveal .closing .slide-background-content {
+  background-image: url("figure/backgrounds/unbranded/plain-title.png");
+  background-size: contain;
+}
+
+.reveal .empty-white .slide-background-content {
+  background-image: url("figure/backgrounds/unbranded/empty-white.png");
+  background-size: contain;
+}
+
+.reveal .empty .slide-background-content {
+  background-image: none;
+  background-size: contain;
+}
+
+.reveal .thank-you .slide-background-content {
+  background-image: none;
+  background-size: contain;
+}
