@@ -314,21 +314,47 @@ taylor_profiles |>
 :::{.columns}
 
 :::{.column width="60%"}
-* [Dynamic Learning Maps](https://dynamiclearningmaps.org)
+* [Dynamic Learning Maps&reg;](https://dynamiclearningmaps.org)
+  * Achievement assessment for students with the most significant cognitive disabilities
+  * Currently used by 24 states for accountability reporting to the U.S. Department of Education
 
-* [Pathways to Instructionally Embedded assessmet](https://pie.atlas4learning.org)
+* [Pathways to Instructionally Embedded assessment](https://pie.atlas4learning.org)
+  * Competitive Grant for State Assessment award in partnership with the Missouri Department of Elementary and Secondary Education
 :::
 
 :::{.column .center width="40%"}
 
 ```{r}
+#| label: emip-qr-code
+#| out-width: 80%
+#| fig-alt: |
+#|   QR code linking to https://doi.org/10.1111/emip.12619
+
 include_graphics("figure/qr-emip.png")
 ```
 
-Thompson & Clark (2024)
+:::{.smaller}
+[Thompson & Clark (2024)](https://doi.org/10.1111/emip.12619): *Improving instructional decision-making using diagnostic classification models*
+:::
 :::
 
 :::
+
+## Dynamic Learning Maps (DLM)
+
+
+
+## DLM reporting
+
+
+
+## Pathways to Instructionally Embedded assessment (PIE)
+
+
+
+## PIE reporting
+
+
 
 # {.empty data-menu-title="measr" background-color="#023047" background-iframe="grid-worms/index.html"}
 
