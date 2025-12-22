@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "index.html#who-am-i",
+    "href": "index.html#who-am-i",
+    "title": "Using diagnostic  classification models",
+    "section": "Who am I?",
+    "text": "Who am I?\n\n\nW. Jake Thompson, Ph.D.\n\nAssistant Director of Psychometrics\n\n\nATLAS | University of Kansas\n\n\nResearch: Applications of diagnostic psychometric models\n\nLead psychometrician and Co-PI for the Dynamic Learnings Maps assessments\nPI for an IES-funded project to develop software for diagnostic models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n   @wjakethompson   wjakethompson.com"
+  },
+  {
+    "objectID": "index.html#acknowledgements",
+    "href": "index.html#acknowledgements",
+    "title": "Using diagnostic  classification models",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nThe research reported here was supported by the Institute of Education Sciences, U.S. Department of Education, through Grants R305D210045 and R305D240032 to the University of Kansas Center for Research, Inc., ATLAS. The opinions expressed are those of the authors and do not represent the views of the the Institute or the U.S. Department of Education."
+  },
+  {
+    "objectID": "index.html#section-1",
+    "href": "index.html#section-1",
+    "title": "Using diagnostic  classification models",
+    "section": "",
+    "text": "Traditional assessments and psychometric models measure an overall skill or ability\nAssume a continuous latent trait"
+  },
+  {
+    "objectID": "index.html#traditional-measurement",
+    "href": "index.html#traditional-measurement",
+    "title": "Using diagnostic  classification models",
+    "section": "Traditional measurement",
+    "text": "Traditional measurement\n\nThe output is a weak ordering of eras due to error in estimates\n\nConfident Taylor Swift (debut) is the worst\nNot confident on ordering toward the middle of the distribution\n\n\nLimited in the types of questions that can be answered.\n\nWhy is Taylor Swift (debut) so low?\nWhat aspects do each era demonstrate proficiency or competency of?\nHow much skill is “enough” to be competent?"
+  },
+  {
+    "objectID": "index.html#diagnostic-measurement",
+    "href": "index.html#diagnostic-measurement",
+    "title": "Using diagnostic  classification models",
+    "section": "Diagnostic measurement",
+    "text": "Diagnostic measurement\n\nDesigned to be multidimensional\nNo continuum of student achievement\nCategorical constructs\n\nUsually binary (e.g., master/nonmaster, proficient/not proficient)\n\n\nSeveral different names in the literature\n\nDiagnostic classification models (DCMs)\nCognitive diagnostic models (CDMs)\nSkills assessment models\nLatent response models\nRestricted latent class models"
+  },
+  {
+    "objectID": "index.html#diagnostic-music-assessment",
+    "href": "index.html#diagnostic-music-assessment",
+    "title": "Using diagnostic  classification models",
+    "section": "Diagnostic music assessment",
+    "text": "Diagnostic music assessment\n\n\n\nRather than measuring overall musical knowledge, we can break music down into set of skills or attributes\n\nSongwriting\nProduction\nVocals\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAttributes are categorical, often dichotomous (e.g., proficient vs. non-proficient)"
+  },
+  {
+    "objectID": "index.html#diagnostic-classification-models",
+    "href": "index.html#diagnostic-classification-models",
+    "title": "Using diagnostic  classification models",
+    "section": "Diagnostic classification models",
+    "text": "Diagnostic classification models\n\nDCMs place individuals into groups according to proficiency of multiple attributes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsongwriting\nproduction\nvocals\n\n\n\n\n\n\nXmark\n\n\n\n\nCheck\n\n\n\n\nCheck\n\n\n\n\n\n\n\nCheck\n\n\n\n\nXmark\n\n\n\n\nCheck\n\n\n\n\n\n\n\nCheck\n\n\n\n\nCheck\n\n\n\n\nCheck"
+  },
+  {
+    "objectID": "index.html#benefits-of-dcms",
+    "href": "index.html#benefits-of-dcms",
+    "title": "Using diagnostic  classification models",
+    "section": "Benefits of DCMs",
+    "text": "Benefits of DCMs\n\nFine-grained, multidimensional results. Answer more questions:\n\nWhy is Taylor Swift (debut) so low?\n\nSubpar songwriting, production, and vocals\n\n\nWhat aspects are albums competent/proficient in?\n\nDCMs provide classifications directly\n\n\n\n\nHigh reliability with fewer items\n\nLess information need to classify than to place precisely along a scale"
+  },
+  {
+    "objectID": "index.html#improved-software-for-diagnostic-models",
+    "href": "index.html#improved-software-for-diagnostic-models",
+    "title": "Using diagnostic  classification models",
+    "section": "Improved software for diagnostic models",
+    "text": "Improved software for diagnostic models\n\nmeasr: R package for Bayesian psychometric measurement using Stan\n\nEasily specify and estimate a DCM\n\nWide variety of DCMs (e.g., LCDM, DINA, C-RUM)\nDefined attribute relationships and dependencies\nSupports maximum likelihood and full MCMC model estimation\n\n\n\nPowerful model evaluation tools\n\nModel fit using posterior predictive model checks\nModel comparisons with leave-one-out cross validation\nClassification accuracy and consistency metrics\n\n\n\nMore information: https://measr.r-dcm.org"
+  }
+]
