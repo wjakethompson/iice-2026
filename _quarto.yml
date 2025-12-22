@@ -1,2 +1,5 @@
 project:
+  type: website
   title: "iice-2026"
+  render:
+    - index.qmd
