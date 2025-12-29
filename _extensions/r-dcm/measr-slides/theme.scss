@@ -41,7 +41,7 @@ $btn-code-copy-color-active: $theme-darkblue;
 
   .subtitle {
     font-family: "Playfair Display";
-    font-size: 28pt;
+    font-size: 32pt;
     color: white;
     position: static;
     margin-bottom: 1.75rem;
@@ -53,6 +53,7 @@ $btn-code-copy-color-active: $theme-darkblue;
 
   .quarto-title-author {
     padding-left: 0;
+    padding-top: 2em;
   }
 
   .quarto-title-author-name {

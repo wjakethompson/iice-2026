@@ -149,8 +149,31 @@ base +
   labs(x = "Musical Knowledge", y = NULL) +
   theme(axis.text.y = element_blank(), axis.title.y = element_blank())
 ```
+
 :::
 :::
+
+## {data-menu-title="Traditional measurement: Weak ordering"}
+
+:::{.columns}
+:::{.column width="20%"}
+* The output is a weak ordering of eras due to error in estimates
+  * Confident *Taylor Swift* (debut) is the worst
+  * Not confident on ordering toward the middle of the distribution
+:::
+
+:::{.column width="80%"}
+```{r}
+#| label: taylor-continuum
+#| out-width: 100%
+#| out-height: 90%
+#| fig-alt: |
+#|   A normal distribution with images of Taylor Swift from each era overlayed.
+```
+
+:::
+:::
+
 
 ## Traditional measurement
 
@@ -189,7 +212,11 @@ base +
 :::
 
 :::{.column width="70%"}
-```{r}
+`
+``
+{
+  r
+}
 #| label: music-attributes
 #| fig-asp: 0.3
 #| out-width: 80%
@@ -342,6 +369,14 @@ include_graphics("figure/qr-emip.png")
 
 ## Dynamic Learning Maps (DLM)
 
+* Assessment items are aligned to alternate academic achievement standards
+  * Academic content available at multiple levels of complexity for each standard
+  * Results reported as profile of skills mastered within each standard
+
+* Teachers have flexibility to assign the level most appropriate for their student
+
+* Skills within each standard follow a linear hierarchy
+
 
 
 ## DLM reporting
@@ -350,7 +385,16 @@ include_graphics("figure/qr-emip.png")
 
 ## Pathways to Instructionally Embedded assessment (PIE)
 
+* Pilot system for instructionally embedded mathematics assessment in grade 5 general educations
 
+* Pathway levels were developed to identify precursor concepts and skills related to the learning target of each standard
+
+* Teachers create content groupings of standards
+
+* Students are assessed on each pathway level within the standard over the course of an instructional cycle
+  * Baseline: Level 1
+  * Midway: Level 1 (retest) + Level 2
+  * End-of-unit: Level 2 (retest) + Level 3
 
 ## PIE reporting
 
