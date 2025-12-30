@@ -498,9 +498,11 @@ More information: <https://measr.r-dcm.org>
 
 # Thank you! {.thank-you data-menu-title="Get in touch" background-color="#023047"}
 
-:::{.columns .v-center-container}
+<br>
 
-:::{.column .image width="65%"}
+:::{.columns}
+
+:::{.column .image width="55%"}
 
 :::{.center}
 Slides
@@ -517,23 +519,19 @@ include_graphics("figure/qr-slides.png")
 
 :::
 
-:::{.column width="35%"}
+:::{.column width="45%"}
 
 :::{.thank-you-subtitle}
-
-:::{.small}
 
 {{< iconify fa6-solid globe >}} \ [wjakethompson.com](https://wjakethompson.com)  
 {{< iconify fa6-solid envelope >}} \ [wjakethompson@ku.edu](mailto:wjakethompson@ku.edu)  
 {{< iconify fa6-brands orcid >}} \ [0000-0001-7339-0300](https://orcid.org/0000-0001-7339-0300)  
 {{< iconify fa6-brands linkedin >}} \ [in/wjakethompson](https://linkedin.com/in/wjakethompson)  
 {{< iconify fa6-brands github >}} \ [@wjakethompson](https://github.com/wjakethompson)  
-{{< iconify fa6-brands mastodon >}} \ [@wjakethompson@fosstodon.org](https://fosstodon.org/@wjakethompson)  
 {{< iconify fa6-brands bluesky >}} \ [@wjakethompson.com](https://bsky.app/profile/wjakethompson.com)  
+{{< iconify fa6-brands mastodon >}} \ [@wjakethompson@fosstodon.org](https://fosstodon.org/@wjakethompson)  
 {{< iconify fa6-brands threads >}} \ [@wjakethompson](https://www.threads.net/@wjakethompson)  
 {{< iconify fa6-brands x-twitter >}} \ [@wjakethompson](https://twitter.com/wjakethompson)  
-
-:::
 
 :::
 
