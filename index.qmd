@@ -407,26 +407,68 @@ include_graphics("figure/qr-emip.png")
 
 * Skills within each standard follow a linear hierarchy
 
+* Results are used throughout the year to inform individual education program (IEP) plans and instructional planning ([Clark et al., 2023](https://doi.org/10.7275/pare.1255))
 
+## DLM reporting {.empty-white}
 
-## DLM reporting
+```{r}
+#| label: dlm-isr
+#| fig-alt: >
+#|   A section of the Learning Profile from a DLM score report.
 
-
+include_graphics("figure/dlm-isr.png")
+```
 
 ## Pathways to Instructionally Embedded assessment (PIE)
 
-* Pilot system for instructionally embedded mathematics assessment in grade 5 general educations
-
-* Pathway levels were developed to identify precursor concepts and skills related to the learning target of each standard
+* Pathway levels were developed for grade 5 mathematics to identify precursor concepts and skills related to the learning target of each standard
 
 * Students are assessed on each pathway level within the standard over the course of an instructional cycle
   * Baseline: Level 1
   * Midway: Level 1 (retest) + Level 2
   * End-of-unit: Level 2 (retest) + Level 3
 
-## PIE reporting
+* Teachers can use results to implement small group or individualized instructional strategies ([ATLAS, 2025](https://pie.atlas4learning.org/sites/default/files/documents/resources/Educator_Perspectives_on_the_PIE_Assessment_System-Evidence_from_a_Pilot_Study.pdf))
 
+## PIE instructional cycle {.empty-white}
 
+```{r}
+#| label: pie-cycle
+#| fig-alt: >
+#|   The PIE cycle of instruction, assessment, and evaluation.
+
+include_graphics("figure/pie-cycle.jpg")
+```
+
+## PIE reporting {.empty-white}
+
+```{r}
+#| label: pie-student
+#| fig-alt: >
+#|   A screenshot of the PIE student dashboard.
+
+include_graphics("figure/pie-student.png")
+```
+
+## PIE reporting {.empty-white}
+
+```{r}
+#| label: pie-class
+#| fig-alt: >
+#|   A screenshot of the PIE classroom dashboard.
+
+include_graphics("figure/pie-class.png")
+```
+
+## Additional research applications
+
+* Evaluate educator understanding of concepts to inform professional development opportunities (e.g., [Bradshaw et al., 2014](https://doi.org/10.1111/emip.12020), [Izsák et al., 2019](https://doi.org/10.5951/jresematheduc.50.2.0156))
+
+* Understand profiles of mental health symptoms (e.g., [Tan et al., 2023](https://doi.org/10.1007/s11121-022-01346-8))
+
+* Evaluate the effect of interventions as transitions in proficiency status (e.g., [Madison & Bradshaw, 2018](https://doi.org/10.1111/jedm.12162))
+
+* How to get started...
 
 # {.empty data-menu-title="measr" background-color="#023047" background-iframe="grid-worms/index.html"}
 
@@ -460,9 +502,17 @@ More information: <https://measr.r-dcm.org>
 
 :::{.column .image width="65%"}
 
+:::{.center}
+Slides
+:::
+
 ```{r}
-#| label: big-image
+#| label: slides-qr-code
 #| out-width: 50%
+#| fig-alt: |
+#|   QR code linking to https://iice2026.wjakethompson.com.
+
+include_graphics("figure/qr-slides.png")
 ```
 
 :::
