@@ -1,4 +1,4 @@
-/* for no measr logos, change `unbranded/` to `ununbranded/` */
+/* for no measr logos, change `branded/` to `ununbranded/` */
 
 .reveal .slide-background-content {
   background-image: url("figure/backgrounds/unbranded/ku-title.png");
@@ -7,6 +7,11 @@
 
 .reveal .level2 .slide-background-content {
   background-image: url("figure/backgrounds/unbranded/default.png");
+  background-size: contain;
+}
+
+.reveal .flip-brand .slide-background-content {
+  background-image: url("figure/backgrounds/branded/default.png");
   background-size: contain;
 }
 

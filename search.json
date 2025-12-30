@@ -21,11 +21,18 @@
     "text": "Traditional assessments and psychometric models measure an overall skill or ability\nAssume a continuous latent trait"
   },
   {
-    "objectID": "index.html#traditional-measurement",
-    "href": "index.html#traditional-measurement",
+    "objectID": "index.html#section-2",
+    "href": "index.html#section-2",
     "title": "Using diagnostic  classification models",
-    "section": "Traditional measurement",
-    "text": "Traditional measurement\n\nThe output is a weak ordering of eras due to error in estimates\n\nConfident Taylor Swift (debut) is the worst\nNot confident on ordering toward the middle of the distribution\n\n\nLimited in the types of questions that can be answered.\n\nWhy is Taylor Swift (debut) so low?\nWhat aspects do each era demonstrate proficiency or competency of?\nHow much skill is “enough” to be competent?"
+    "section": "",
+    "text": "The output is a weak ordering due to error in estimates\n\nConfident Taylor Swift (debut) is the worst\nNot confident on ordering toward the middle of the distribution"
+  },
+  {
+    "objectID": "index.html#section-3",
+    "href": "index.html#section-3",
+    "title": "Using diagnostic  classification models",
+    "section": "",
+    "text": "Limited in the types of questions that can be answered.\n\nWhy is Taylor Swift (debut) so low?\nWhat aspects do each era demonstrate proficiency or competency of?\nHow much skill is “enough” to be competent?"
   },
   {
     "objectID": "index.html#diagnostic-measurement",
@@ -46,14 +53,70 @@
     "href": "index.html#diagnostic-classification-models",
     "title": "Using diagnostic  classification models",
     "section": "Diagnostic classification models",
-    "text": "Diagnostic classification models\n\nDCMs place individuals into groups according to proficiency of multiple attributes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsongwriting\nproduction\nvocals\n\n\n\n\n\n\nXmark\n\n\n\n\nCheck\n\n\n\n\nCheck\n\n\n\n\n\n\n\nCheck\n\n\n\n\nXmark\n\n\n\n\nCheck\n\n\n\n\n\n\n\nCheck\n\n\n\n\nCheck\n\n\n\n\nCheck"
+    "text": "Diagnostic classification models\n\n\n\nDCMs place individuals into groups according to proficiency of multiple attributes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsongwriting\nproduction\nvocals\n\n\n\n\n\n\nXmark\n\n\n\n\nXmark\n\n\n\n\nXmark\n\n\n\n\n\n\n\nXmark\n\n\n\n\nCheck\n\n\n\n\nCheck\n\n\n\n\n\n\n\nCheck\n\n\n\n\nXmark\n\n\n\n\nCheck\n\n\n\n\n\n\n\nCheck\n\n\n\n\nCheck\n\n\n\n\nCheck"
   },
   {
     "objectID": "index.html#benefits-of-dcms",
     "href": "index.html#benefits-of-dcms",
     "title": "Using diagnostic  classification models",
     "section": "Benefits of DCMs",
-    "text": "Benefits of DCMs\n\nFine-grained, multidimensional results. Answer more questions:\n\nWhy is Taylor Swift (debut) so low?\n\nSubpar songwriting, production, and vocals\n\n\nWhat aspects are albums competent/proficient in?\n\nDCMs provide classifications directly\n\n\n\n\nHigh reliability with fewer items\n\nLess information need to classify than to place precisely along a scale"
+    "text": "Benefits of DCMs\n\n\n\nFine-grained, multidimensional results. Answer more questions:\n\nWhy is Taylor Swift (debut) so low?\n\nSubpar songwriting, production, and vocals\n\n\nWhat aspects are albums competent/proficient in?\n\nDCMs provide classifications directly\n\n\n\n\nHigh reliability with fewer items\n\nLess information need to classify than to place precisely along a scale\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsongwriting\nproduction\nvocals\n\n\n\n\n\n\nXmark\n\n\n\n\nXmark\n\n\n\n\nXmark\n\n\n\n\n\n\n\nXmark\n\n\n\n\nCheck\n\n\n\n\nCheck\n\n\n\n\n\n\n\nCheck\n\n\n\n\nXmark\n\n\n\n\nCheck\n\n\n\n\n\n\n\nCheck\n\n\n\n\nCheck\n\n\n\n\nCheck"
+  },
+  {
+    "objectID": "index.html#applications-in-educational-assessment",
+    "href": "index.html#applications-in-educational-assessment",
+    "title": "Using diagnostic  classification models",
+    "section": "Applications in educational assessment",
+    "text": "Applications in educational assessment\n\n\n\n\nDynamic Learning Maps®\n\nAchievement assessment for students with the most significant cognitive disabilities\nCurrently used by 24 states for accountability reporting to the U.S. Department of Education\n\n\n\nPathways to Instructionally Embedded assessment\n\nCompetitive Grant for State Assessment award from the U.S. Department of Education\nPartnership between ATLAS and the Missouri Department of Elementary and Secondary Education\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThompson & Clark (2024): Improving instructional decision-making using diagnostic classification models"
+  },
+  {
+    "objectID": "index.html#dynamic-learning-maps-dlm",
+    "href": "index.html#dynamic-learning-maps-dlm",
+    "title": "Using diagnostic  classification models",
+    "section": "Dynamic Learning Maps (DLM)",
+    "text": "Dynamic Learning Maps (DLM)\n\n\nAssessment items are aligned to alternate academic achievement standards\n\nAcademic content available at multiple levels of complexity for each standard\nResults reported as profile of skills mastered within each standard\n\n\nTeachers have flexibility to assign the level most appropriate for their student\nSkills within each standard follow a linear hierarchy\nResults are used throughout the year to inform individual education program (IEP) plans and instructional planning (Clark et al., 2023)"
+  },
+  {
+    "objectID": "index.html#dlm-reporting",
+    "href": "index.html#dlm-reporting",
+    "title": "Using diagnostic  classification models",
+    "section": "DLM reporting",
+    "text": "DLM reporting"
+  },
+  {
+    "objectID": "index.html#pathways-to-instructionally-embedded-assessment-pie",
+    "href": "index.html#pathways-to-instructionally-embedded-assessment-pie",
+    "title": "Using diagnostic  classification models",
+    "section": "Pathways to Instructionally Embedded assessment (PIE)",
+    "text": "Pathways to Instructionally Embedded assessment (PIE)\n\nPathway levels were developed for grade 5 mathematics to identify precursor concepts and skills related to the learning target of each standard\n\nStudents are assessed on each pathway level within the standard over the course of an instructional cycle\n\nBaseline: Level 1\nMidway: Level 1 (retest) + Level 2\nEnd-of-unit: Level 2 (retest) + Level 3\n\n\nTeachers can use results to implement small group or individualized instructional strategies (ATLAS, 2025)"
+  },
+  {
+    "objectID": "index.html#pie-instructional-cycle",
+    "href": "index.html#pie-instructional-cycle",
+    "title": "Using diagnostic  classification models",
+    "section": "PIE instructional cycle",
+    "text": "PIE instructional cycle"
+  },
+  {
+    "objectID": "index.html#pie-reporting",
+    "href": "index.html#pie-reporting",
+    "title": "Using diagnostic  classification models",
+    "section": "PIE reporting",
+    "text": "PIE reporting"
+  },
+  {
+    "objectID": "index.html#pie-reporting-1",
+    "href": "index.html#pie-reporting-1",
+    "title": "Using diagnostic  classification models",
+    "section": "PIE reporting",
+    "text": "PIE reporting"
+  },
+  {
+    "objectID": "index.html#additional-research-applications",
+    "href": "index.html#additional-research-applications",
+    "title": "Using diagnostic  classification models",
+    "section": "Additional research applications",
+    "text": "Additional research applications\n\nEvaluate educator understanding of concepts to inform professional development opportunities (e.g., Bradshaw et al., 2014, Izsák et al., 2019)\nUnderstand profiles of mental health symptoms (e.g., Tan et al., 2023)\nEvaluate the effect of interventions as transitions in proficiency status (e.g., Madison & Bradshaw, 2018)\nHow to get started…"
   },
   {
     "objectID": "index.html#improved-software-for-diagnostic-models",
