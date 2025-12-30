@@ -109,12 +109,12 @@ include_graphics(here("figure", "taylor", "all-taylor.png"))
 ## {data-menu-title="Classic psychometrics"}
 
 :::{.columns}
-:::{.column width="20%"}
+:::{.column width="25%"}
 * Traditional assessments and psychometric models measure an overall skill or ability
 * Assume a continuous latent trait
 :::
 
-:::{.column width="80%"}
+:::{.column width="75%"}
 ```{r}
 #| label: taylor-continuum
 #| out-width: 100%
@@ -156,13 +156,13 @@ base +
 ## {data-menu-title="Traditional measurement: Weak ordering"}
 
 :::{.columns}
-:::{.column width="20%"}
-* The output is a weak ordering of eras due to error in estimates
+:::{.column width="25%"}
+* The output is a weak ordering due to error in estimates
   * Confident *Taylor Swift* (debut) is the worst
   * Not confident on ordering toward the middle of the distribution
 :::
 
-:::{.column width="80%"}
+:::{.column width="75%"}
 ```{r}
 #| label: taylor-continuum
 #| out-width: 100%
@@ -174,17 +174,27 @@ base +
 :::
 :::
 
+## {data-menu-title="Traditional measurement: Student feedback"}
 
-## Traditional measurement
-
-* The output is a weak ordering of eras due to error in estimates
-  * Confident *Taylor Swift* (debut) is the worst
-  * Not confident on ordering toward the middle of the distribution
-
+:::{.columns}
+:::{.column width="25%"}
 * Limited in the types of questions that can be answered. 
   * Why is *Taylor Swift* (debut) so low?
   * What aspects do each era demonstrate proficiency or competency of?
   * How much skill is "enough" to be competent?
+:::
+
+:::{.column width="75%"}
+```{r}
+#| label: taylor-continuum
+#| out-width: 100%
+#| out-height: 90%
+#| fig-alt: |
+#|   A normal distribution with images of Taylor Swift from each era overlayed.
+```
+
+:::
+:::
   
 ## Diagnostic measurement
 
@@ -212,11 +222,7 @@ base +
 :::
 
 :::{.column width="70%"}
-`
-``
-{
-  r
-}
+```{r}
 #| label: music-attributes
 #| fig-asp: 0.3
 #| out-width: 80%
@@ -272,9 +278,15 @@ tibble(
 
 ## Diagnostic classification models
 
+:::{.columns}
+:::{.column width="50%"}
 * DCMs place individuals into groups according to proficiency of multiple attributes
+:::
 
-```{r taylor-profiles}
+:::{.column width="50%"}
+```{r}
+#| label: taylor-profiles
+
 library(gt)
 library(gtExtras)
 
@@ -307,7 +319,7 @@ taylor_profiles <- taylors |>
   )
 
 taylor_profiles |>
-  filter(era %in% c("1989", "reputation", "folklore")) |>
+  filter(era %in% c("Debut", "1989", "reputation", "folklore")) |>
   select(img, songwriting, production, vocals, ends_with("_color")) |>
   gt() |>
   cols_hide(ends_with("_color")) |>
@@ -323,8 +335,13 @@ taylor_profiles |>
   tab_options(table.font.size = 24)
 ```
 
+:::
+:::
+
 ## Benefits of DCMs
 
+:::{.columns}
+:::{.column width="50%"}
 * Fine-grained, multidimensional results. Answer more questions:
   * Why is *Taylor Swift* (debut) so low?
     * Subpar songwriting, production, and vocals
@@ -333,6 +350,15 @@ taylor_profiles |>
 
 * High reliability with fewer items
   * Less information need to classify than to place precisely along a scale
+:::
+
+:::{.column width="50%"}
+```{r}
+#| label: taylor-profiles
+```
+
+:::
+:::
 
 # Using DCMs to improve student<br/>outcomes
 
@@ -340,13 +366,17 @@ taylor_profiles |>
 
 :::{.columns}
 
-:::{.column width="60%"}
+:::{.column width="57%"}
 * [Dynamic Learning Maps&reg;](https://dynamiclearningmaps.org)
   * Achievement assessment for students with the most significant cognitive disabilities
   * Currently used by 24 states for accountability reporting to the U.S. Department of Education
 
 * [Pathways to Instructionally Embedded assessment](https://pie.atlas4learning.org)
-  * Competitive Grant for State Assessment award in partnership with the Missouri Department of Elementary and Secondary Education
+  * Competitive Grant for State Assessment award from the U.S. Department of Education
+  * Partnership between ATLAS and the Missouri Department of Elementary and Secondary Education
+:::
+
+:::{.column width="3%"}
 :::
 
 :::{.column .center width="40%"}
@@ -388,8 +418,6 @@ include_graphics("figure/qr-emip.png")
 * Pilot system for instructionally embedded mathematics assessment in grade 5 general educations
 
 * Pathway levels were developed to identify precursor concepts and skills related to the learning target of each standard
-
-* Teachers create content groupings of standards
 
 * Students are assessed on each pathway level within the standard over the course of an instructional cycle
   * Baseline: Level 1
